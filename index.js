@@ -1,6 +1,10 @@
 // code your solution here
-const superbowlWin = array => {
-    if (array.result === "W") {
-        console.log(array.year);
-    };
+function superbowlWin(records) {
+    for (let record of records) {
+        if (record.result === "W") {
+            return record.year
+        }
+    }
 }
+
+//array.find(superbowlWin);
